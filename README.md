@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/platform-iOS%2014+-blue.svg)](https://www.apple.com/ios/ios-15/)
 [![Generic badge](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://spdx.org/licenses/GPL-3.0-or-later.html)
+[![GPLv3 license](https://img.shields.io/badge/License-MIT-blue.svg)](https://spdx.org/licenses/MIT.html)
 
 This framework simplifies the integration of SBB generated CoreML ObjectDetection models into iOS Apps using Combine. It displays a CameraStream Preview in your SwiftuI View and publishes detected objects, which you can then draw over the CameraStream Preview or use for further app logic.
 
@@ -58,4 +58,4 @@ General instructions on _how_ to contribute can be found under [Contributing](Co
 
 ## License
 
-Code released under the [GPL-3.0-or-later license](LICENSE).
+Code released under the [MIT](LICENSE).
