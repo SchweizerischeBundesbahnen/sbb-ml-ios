@@ -1,0 +1,25 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: SBB
+Upstream-Contact: SBB AG <mobile@sbb.ch>
+Source: https://github.com/SchweizerischeBundesbahnen/mobile-ios-ml
+
+# Files below the threshold of originality (metadata, config and project-information)
+Files:
+    
+Copyright: 2021 SBB AG <mobile@sbb.ch>
+License: CC0-1.0
+
+# Source code of SBB ML
+Files:
+    SBBML/*.swift
+Copyright: 2021 SBB AG <mobile@sbb.ch>
+License: MIT
+
+# Documentation of SBB ML
+Files:
+    docs/*
+    README.md
+    CONTRIBUTING.md
+    ReleaseNotes.md
+Copyright: 2021 SBB AG <mobile@sbb.ch>
+License: GFDL-1.3-or-later

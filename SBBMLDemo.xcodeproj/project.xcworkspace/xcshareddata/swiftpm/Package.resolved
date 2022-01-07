@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SBBDesignSystemMobileSwiftUI",
+        "repositoryURL": "git@github.com:SchweizerischeBundesbahnen/mobile-ios-design-swiftui.git",
+        "state": {
+          "branch": "develop",
+          "revision": "d76205f288e5928fdc17b2ccfc1f1074dfac7bb1",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
