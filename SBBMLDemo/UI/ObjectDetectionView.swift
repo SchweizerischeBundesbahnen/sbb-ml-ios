@@ -47,7 +47,9 @@ struct ObjectDetectionView: View {
             }
         }
         .sheet(isPresented: $showingModalView, onDismiss: {
-            detectedObjectsViewModel.configureObjectDetectionService()
+            DispatchQueue.main.async {
+                detectedObjectsViewModel.configureObjectDetectionService()
+            }
         }) {
             SettingsView(detectedObjectsViewModel: detectedObjectsViewModel, showingModalView: $showingModalView)
                 .environmentObject(onboardingViewModel)

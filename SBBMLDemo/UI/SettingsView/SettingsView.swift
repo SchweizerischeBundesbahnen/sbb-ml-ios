@@ -71,7 +71,7 @@ struct SettingsView: View {
                                 .padding(.horizontal, 16)
                             SBBDivider()
                                 .padding(.leading, 16)
-                            NavigationLink(destination: MLModelSettingsView(detectedObjectsViewModel: detectedObjectsViewModel), isActive: $showMLModelSettingsView, label: { SBBListItem(label: Text("ML Model size"), footnote: Text(detectedObjectsViewModel.model.description), showBottomLine: false) })
+                            NavigationLink(destination: MLModelSettingsView(detectedObjectsViewModel: detectedObjectsViewModel), isActive: $showMLModelSettingsView, label: { SBBListItem(label: Text("ML Model"), footnote: Text(detectedObjectsViewModel.model.description), showBottomLine: false) })
                         }
                         
                         SBBFormGroup(title: "Object Tracking") {

@@ -53,10 +53,20 @@
 		7C9DA906273D21C300CC89FF /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA905273D21C300CC89FF /* OnboardingViewModel.swift */; };
 		7C9DA909273D225F00CC89FF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA908273D225F00CC89FF /* OnboardingView.swift */; };
 		7C9DA90B273D416E00CC89FF /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7C9DA90A273D416E00CC89FF /* Documentation.docc */; };
+		7CB02D862795463A007EDF11 /* bahnhof_yolov5s6_640_float16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D8027954629007EDF11 /* bahnhof_yolov5s6_640_float16.mlmodel */; };
+		7CB02D872795463A007EDF11 /* bahnhof_yolov5m6_640_float16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D812795462E007EDF11 /* bahnhof_yolov5m6_640_float16.mlmodel */; };
+		7CB02D882795463A007EDF11 /* bahnhof_yolov5m6_640_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D8227954631007EDF11 /* bahnhof_yolov5m6_640_int8.mlmodel */; };
+		7CB02D892795463A007EDF11 /* bahnhof_yolov5m6_640_float32.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D8327954638007EDF11 /* bahnhof_yolov5m6_640_float32.mlmodel */; };
+		7CB02D8A2795463A007EDF11 /* bahnhof_yolov5s6_640_float32.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D842795463A007EDF11 /* bahnhof_yolov5s6_640_float32.mlmodel */; };
+		7CB02D8B2795463A007EDF11 /* bahnhof_yolov5s6_640_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D852795463A007EDF11 /* bahnhof_yolov5s6_640_int8.mlmodel */; };
+		7CB02D9227954649007EDF11 /* wagen_yolov5m_640_float32.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D8C27954645007EDF11 /* wagen_yolov5m_640_float32.mlmodel */; };
+		7CB02D9327954649007EDF11 /* wagen_yolov5m_640_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D8D27954646007EDF11 /* wagen_yolov5m_640_int8.mlmodel */; };
+		7CB02D9427954649007EDF11 /* wagen_yolov5n_640_float32.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D8E27954646007EDF11 /* wagen_yolov5n_640_float32.mlmodel */; };
+		7CB02D9527954649007EDF11 /* wagen_yolov5n_640_float16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D8F27954646007EDF11 /* wagen_yolov5n_640_float16.mlmodel */; };
+		7CB02D9627954649007EDF11 /* wagen_yolov5m_640_float16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D9027954648007EDF11 /* wagen_yolov5m_640_float16.mlmodel */; };
+		7CB02D9727954649007EDF11 /* wagen_yolov5n_640_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CB02D9127954649007EDF11 /* wagen_yolov5n_640_int8.mlmodel */; };
 		7CBBFF032685F88F005DD0E7 /* ObjectDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBFF022685F88F005DD0E7 /* ObjectDetectionTests.swift */; };
 		7CC170E326E76EA90083F999 /* BuiltinMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC170E226E76EA90083F999 /* BuiltinMLModel.swift */; };
-		7CC170E726E770BB0083F999 /* yolov5-coreML_640_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CC170E426E770B10083F999 /* yolov5-coreML_640_int8.mlmodel */; };
-		7CC170E826E770BB0083F999 /* yolov5-coreML_640_float16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7CC170E526E770B50083F999 /* yolov5-coreML_640_float16.mlmodel */; };
 		7CFF4E8926C5029300C78C7F /* ThresholdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF4E8826C5029300C78C7F /* ThresholdProvider.swift */; };
 		7CFF4E8B26C5035F00C78C7F /* DetectedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF4E8A26C5035F00C78C7F /* DetectedObject.swift */; };
 		7CFF4E8F26C6539200C78C7F /* BoundingBoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF4E8E26C6539200C78C7F /* BoundingBoxesView.swift */; };
@@ -132,7 +142,6 @@
 		7C72FA7D26859BEC00DBB03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C72FA8026859BEC00DBB03D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C72FA8226859BEC00DBB03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C7D60212685F47800FE4112 /* Jenkinsfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
 		7C807A2E26BD4FE600C0B6D5 /* CameraStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStreamViewController.swift; sourceTree = "<group>"; };
 		7C807A3026BD50F100C0B6D5 /* CameraStreamViewControllerRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStreamViewControllerRepresentation.swift; sourceTree = "<group>"; };
 		7C807A3226BD51C700C0B6D5 /* CameraStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraStreamView.swift; sourceTree = "<group>"; };
@@ -152,12 +161,22 @@
 		7C9DA905273D21C300CC89FF /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		7C9DA908273D225F00CC89FF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		7C9DA90A273D416E00CC89FF /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		7CB02D8027954629007EDF11 /* bahnhof_yolov5s6_640_float16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bahnhof_yolov5s6_640_float16.mlmodel; sourceTree = "<group>"; };
+		7CB02D812795462E007EDF11 /* bahnhof_yolov5m6_640_float16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bahnhof_yolov5m6_640_float16.mlmodel; sourceTree = "<group>"; };
+		7CB02D8227954631007EDF11 /* bahnhof_yolov5m6_640_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bahnhof_yolov5m6_640_int8.mlmodel; sourceTree = "<group>"; };
+		7CB02D8327954638007EDF11 /* bahnhof_yolov5m6_640_float32.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bahnhof_yolov5m6_640_float32.mlmodel; sourceTree = "<group>"; };
+		7CB02D842795463A007EDF11 /* bahnhof_yolov5s6_640_float32.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bahnhof_yolov5s6_640_float32.mlmodel; sourceTree = "<group>"; };
+		7CB02D852795463A007EDF11 /* bahnhof_yolov5s6_640_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = bahnhof_yolov5s6_640_int8.mlmodel; sourceTree = "<group>"; };
+		7CB02D8C27954645007EDF11 /* wagen_yolov5m_640_float32.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wagen_yolov5m_640_float32.mlmodel; sourceTree = "<group>"; };
+		7CB02D8D27954646007EDF11 /* wagen_yolov5m_640_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wagen_yolov5m_640_int8.mlmodel; sourceTree = "<group>"; };
+		7CB02D8E27954646007EDF11 /* wagen_yolov5n_640_float32.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wagen_yolov5n_640_float32.mlmodel; sourceTree = "<group>"; };
+		7CB02D8F27954646007EDF11 /* wagen_yolov5n_640_float16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wagen_yolov5n_640_float16.mlmodel; sourceTree = "<group>"; };
+		7CB02D9027954648007EDF11 /* wagen_yolov5m_640_float16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wagen_yolov5m_640_float16.mlmodel; sourceTree = "<group>"; };
+		7CB02D9127954649007EDF11 /* wagen_yolov5n_640_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wagen_yolov5n_640_int8.mlmodel; sourceTree = "<group>"; };
 		7CBBFF002685F88F005DD0E7 /* SBBMLDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBBMLDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBBFF022685F88F005DD0E7 /* ObjectDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionTests.swift; sourceTree = "<group>"; };
 		7CBBFF042685F88F005DD0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC170E226E76EA90083F999 /* BuiltinMLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinMLModel.swift; sourceTree = "<group>"; };
-		7CC170E426E770B10083F999 /* yolov5-coreML_640_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "yolov5-coreML_640_int8.mlmodel"; sourceTree = "<group>"; };
-		7CC170E526E770B50083F999 /* yolov5-coreML_640_float16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "yolov5-coreML_640_float16.mlmodel"; sourceTree = "<group>"; };
 		7CFF4E8826C5029300C78C7F /* ThresholdProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdProvider.swift; sourceTree = "<group>"; };
 		7CFF4E8A26C5035F00C78C7F /* DetectedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedObject.swift; sourceTree = "<group>"; };
 		7CFF4E8E26C6539200C78C7F /* BoundingBoxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxesView.swift; sourceTree = "<group>"; };
@@ -291,7 +310,6 @@
 			children = (
 				7C16409C2685C7B600C4EEF3 /* README.md */,
 				7C16409D2685C7B600C4EEF3 /* ReleaseNotes.md */,
-				7C7D60212685F47800FE4112 /* Jenkinsfile */,
 				7C0E1BF82785C7AC002CED57 /* Contributing.md */,
 				7C0E1BFD2785C7AD002CED57 /* LICENSE */,
 				7C0E1BF92785C7AD002CED57 /* LICENSES */,
@@ -321,8 +339,18 @@
 				7C0C243D27303214003FA32C /* Helper */,
 				7C72FA7D26859BEC00DBB03D /* Assets.xcassets */,
 				7C72FA8226859BEC00DBB03D /* Info.plist */,
-				7CC170E526E770B50083F999 /* yolov5-coreML_640_float16.mlmodel */,
-				7CC170E426E770B10083F999 /* yolov5-coreML_640_int8.mlmodel */,
+				7CB02D812795462E007EDF11 /* bahnhof_yolov5m6_640_float16.mlmodel */,
+				7CB02D8327954638007EDF11 /* bahnhof_yolov5m6_640_float32.mlmodel */,
+				7CB02D8227954631007EDF11 /* bahnhof_yolov5m6_640_int8.mlmodel */,
+				7CB02D8027954629007EDF11 /* bahnhof_yolov5s6_640_float16.mlmodel */,
+				7CB02D842795463A007EDF11 /* bahnhof_yolov5s6_640_float32.mlmodel */,
+				7CB02D852795463A007EDF11 /* bahnhof_yolov5s6_640_int8.mlmodel */,
+				7CB02D9027954648007EDF11 /* wagen_yolov5m_640_float16.mlmodel */,
+				7CB02D8C27954645007EDF11 /* wagen_yolov5m_640_float32.mlmodel */,
+				7CB02D8D27954646007EDF11 /* wagen_yolov5m_640_int8.mlmodel */,
+				7CB02D8F27954646007EDF11 /* wagen_yolov5n_640_float16.mlmodel */,
+				7CB02D8E27954646007EDF11 /* wagen_yolov5n_640_float32.mlmodel */,
+				7CB02D9127954649007EDF11 /* wagen_yolov5n_640_int8.mlmodel */,
 				7C72FA7F26859BEC00DBB03D /* Preview Content */,
 			);
 			path = SBBMLDemo;
@@ -644,18 +672,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C72FA7C26859BEA00DBB03D /* ContentView.swift in Sources */,
+				7CB02D892795463A007EDF11 /* bahnhof_yolov5m6_640_float32.mlmodel in Sources */,
 				7C0C243C27302CFA003FA32C /* ComputeUnitsSettingsView.swift in Sources */,
+				7CB02D9427954649007EDF11 /* wagen_yolov5n_640_float32.mlmodel in Sources */,
 				7C56562B26CFA5A6007ACD47 /* SettingsView.swift in Sources */,
 				7C9DA909273D225F00CC89FF /* OnboardingView.swift in Sources */,
-				7CC170E826E770BB0083F999 /* yolov5-coreML_640_float16.mlmodel in Sources */,
 				7C807A4526BD58BD00C0B6D5 /* ObjectDetectionView.swift in Sources */,
+				7CB02D8B2795463A007EDF11 /* bahnhof_yolov5s6_640_int8.mlmodel in Sources */,
+				7CB02D9227954649007EDF11 /* wagen_yolov5m_640_float32.mlmodel in Sources */,
+				7CB02D9327954649007EDF11 /* wagen_yolov5m_640_int8.mlmodel in Sources */,
 				7C0C243F27303221003FA32C /* MLComputeUnitsExtension.swift in Sources */,
 				7C0C2445273036D1003FA32C /* AVLayerVideoGravityExtension.swift in Sources */,
 				7CFF4E8F26C6539200C78C7F /* BoundingBoxesView.swift in Sources */,
 				7C9DA906273D21C300CC89FF /* OnboardingViewModel.swift in Sources */,
 				7C0C244327303665003FA32C /* CameraPreviewSettingsView.swift in Sources */,
 				7C0C24412730334A003FA32C /* MLModelSettingsView.swift in Sources */,
-				7CC170E726E770BB0083F999 /* yolov5-coreML_640_int8.mlmodel in Sources */,
+				7CB02D9727954649007EDF11 /* wagen_yolov5n_640_int8.mlmodel in Sources */,
+				7CB02D9627954649007EDF11 /* wagen_yolov5m_640_float16.mlmodel in Sources */,
+				7CB02D862795463A007EDF11 /* bahnhof_yolov5s6_640_float16.mlmodel in Sources */,
+				7CB02D9527954649007EDF11 /* wagen_yolov5n_640_float16.mlmodel in Sources */,
+				7CB02D8A2795463A007EDF11 /* bahnhof_yolov5s6_640_float32.mlmodel in Sources */,
+				7CB02D882795463A007EDF11 /* bahnhof_yolov5m6_640_int8.mlmodel in Sources */,
+				7CB02D872795463A007EDF11 /* bahnhof_yolov5m6_640_float16.mlmodel in Sources */,
 				7CFF4E9726C6941D00C78C7F /* ErrorView.swift in Sources */,
 				7C807A4126BD572400C0B6D5 /* DetectedObjectsViewModel.swift in Sources */,
 				7CC170E326E76EA90083F999 /* BuiltinMLModel.swift in Sources */,

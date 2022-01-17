@@ -50,7 +50,7 @@ class DetectedObjectsViewModel: ObservableObject {
     
     init() {
         let objectDetectionServiceConfiguration = ObjectDetectionServiceConfiguration()
-        let model = BuiltinMLModel.int8
+        let model = BuiltinMLModel.wagenN640Int8
         self.model = model
         self.confidenceThreshold = Double(objectDetectionServiceConfiguration.confidenceThreshold)
         self.iouThreshold = objectDetectionServiceConfiguration.iouThreshold
@@ -85,12 +85,10 @@ class DetectedObjectsViewModel: ObservableObject {
     
     func configureObjectDetectionService() {
         let objectDetectionServiceConfiguration = ObjectDetectionServiceConfiguration(confidenceThreshold: VNConfidence(confidenceThreshold), iouThreshold: iouThreshold, objectDetectionRate: objectDetectionRate, objectTrackingEnabled: objectTrackingEnabled, objectTrackingConfidenceThreshold: VNConfidence(objectTrackingConfidenceThreshold), previewVideoGravity: previewVideoGravity, computeUnits: computeUnits, distanceRecordingEnabled: distanceRecordingEnabled)
-        if self.objectDetectionServiceConfiguration != objectDetectionServiceConfiguration {
-            self.objectDetectionServiceConfiguration = objectDetectionServiceConfiguration
-            self.objectDetectionService = ObjectDetectionService(modelFileName: model.rawValue, configuration: objectDetectionServiceConfiguration)
-            setupSubscriptions()
-            self.objectDetectionService.requestCameraAuthorization()
-        }
+        self.objectDetectionServiceConfiguration = objectDetectionServiceConfiguration
+        self.objectDetectionService = ObjectDetectionService(modelFileName: model.rawValue, configuration: objectDetectionServiceConfiguration)
+        setupSubscriptions()
+        self.objectDetectionService.requestCameraAuthorization()
     }
     
     func color(for label: String) -> Color {

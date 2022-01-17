@@ -11,9 +11,19 @@ struct MLModelSettingsView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            SBBRadioButtonGroup(title: "ML Model Size", selection: $detectedObjectsViewModel.model, tags: BuiltinMLModel.allCases) {
-                SBBRadioButton(text: Text(BuiltinMLModel.int8.description))
-                SBBRadioButton(text: Text(BuiltinMLModel.float16.description), showBottomLine: false)
+            SBBRadioButtonGroup(title: "ML Model", selection: $detectedObjectsViewModel.model, tags: Array(BuiltinMLModel.allCases)) {
+                SBBRadioButton(text: Text(BuiltinMLModel.bahnhofM640Int8.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.bahnhofM640Float16.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.bahnhofM640Float32.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.bahnhofS640Int8.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.bahnhofS640Float16.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.bahnhofS640Float32.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.wagenM640Int8.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.wagenM640Float16.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.wagenM640Float32.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.wagenN640Int8.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.wagenN640Float16.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.wagenN640Float32.description), showBottomLine: false)
             }
         }
             .navigationBarHidden(true)
