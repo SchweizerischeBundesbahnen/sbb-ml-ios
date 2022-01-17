@@ -12,7 +12,7 @@ class ObjectDetectionTests: XCTestCase {
     private var objectDetection: ObjectDetection!
 
     override func setUpWithError() throws {
-        let modelProvider = ModelProvider(modelFileName: "yolov5-coreML_640_int8")
+        let modelProvider = ModelProvider(modelFileName: "wagen_yolov5n_640_int8")
         let thresholdProvider = ThresholdProvider(confidenceThreshold: 0.5, iouThreshold: 0.6)
         
         self.objectDetection = ObjectDetection(modelProvider: modelProvider, thresholdProvider: thresholdProvider, inferencePerformanceAnalysis: nil, depthRecognition: nil)
@@ -53,15 +53,15 @@ class ObjectDetectionTests: XCTestCase {
         
         let sub = objectDetection.detectedObjectsPublisher
             .sink(receiveValue: { detectedObjects in
-                guard let detectedObject = detectedObjects.first else {
+                guard let detectedObject = detectedObjects.last(where: { $0.label == "Sitz" }) else {
                     return
                 }
 
                 XCTAssertEqual(detectedObject.label, "Sitz")
                 XCTAssertTrue(detectedObject.rectInPreviewLayer.minX > 0.1 && detectedObject.rectInPreviewLayer.minX < 0.2)
                 XCTAssertTrue(detectedObject.rectInPreviewLayer.minY > 0.1 && detectedObject.rectInPreviewLayer.minY < 0.2)
-                XCTAssertTrue(detectedObject.rectInPreviewLayer.maxX > 0.5 && detectedObject.rectInPreviewLayer.maxX < 0.6)
-                XCTAssertTrue(detectedObject.rectInPreviewLayer.maxY > 0.8 && detectedObject.rectInPreviewLayer.maxY < 0.9)
+                XCTAssertTrue(detectedObject.rectInPreviewLayer.maxX > 0.4 && detectedObject.rectInPreviewLayer.maxX < 0.6)
+                XCTAssertTrue(detectedObject.rectInPreviewLayer.maxY > 0.6 && detectedObject.rectInPreviewLayer.maxY < 0.9)
 
                 expectation.fulfill()
             })

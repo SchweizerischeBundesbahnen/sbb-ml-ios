@@ -129,9 +129,11 @@ struct SettingsView: View {
                                 SBBListItem(label: Text("Mobile Libraries"), image: Image(sbbName: "smartphone", size: .small))
                             }
                             Button(action: {
-                                onboardingViewModel.currentOnboardingCardIndex = 0
-                                onboardingViewModel.onboardingState = .startView
                                 showingModalView = false
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    onboardingViewModel.currentOnboardingCardIndex = 0
+                                    onboardingViewModel.onboardingState = .startView
+                                }
                             }) {
                                 SBBListItem(label: Text("Show Onboarding"), image: Image(sbbName: "circle-information", size: .small), showBottomLine: false)
                             }

@@ -10,7 +10,7 @@ struct OnboardingView: View {
     @EnvironmentObject var viewModel: OnboardingViewModel
     
     private let startView = SBBOnboardingTitleView(image: Image("Onboarding_Start"), title: Text("Welcome to the SBB ML Demo App"))
-    private let endView = SBBOnboardingTitleView(image: Image("Onboarding_Start"), title: Text("Enjoy exploring the capabilites of the MachineLearning library."))
+    private let endView = SBBOnboardingTitleView(image: Image("Onboarding_Start"), title: Text("Enjoy exploring the capabilites of the SBB ML library."))
 
     var body: some View {
         SBBOnboardingView(state: $viewModel.onboardingState, currentCardIndex: $viewModel.currentOnboardingCardIndex, startView: startView, endView: endView) {
@@ -28,13 +28,13 @@ struct OnboardingView: View {
             }
             SBBOnboardingCardView(image: Image("Onboarding_Card2"), title: Text("iOS and Android Libraries"), text: Text("Libraries for iOS and Android allow developers to easily integrate automatically trained ML models.")) {
                 Button(action: {
-                    guard let url = URL(string: "https://code.sbb.ch/projects/KD_ESTA_MOBILE/repos/esta-mobile-ios-ml/browse"),
+                    guard let url = URL(string: "https://github.com/SchweizerischeBundesbahnen/mobile-ios-ml"),
                         UIApplication.shared.canOpenURL(url) else {
                         return
                     }
                     UIApplication.shared.open(url)
                 }) {
-                    Text("Bitbucket")
+                    Text("GitHub")
                 }
                     .buttonStyle(SBBSecondaryButtonStyle())
             }
