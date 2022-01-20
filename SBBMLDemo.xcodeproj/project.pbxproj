@@ -73,6 +73,9 @@
 		7CFF4E9126C66DBC00C78C7F /* CameraOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF4E9026C66DBC00C78C7F /* CameraOutput.swift */; };
 		7CFF4E9326C688DB00C78C7F /* CameraControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF4E9226C688DB00C78C7F /* CameraControllerProtocol.swift */; };
 		7CFF4E9726C6941D00C78C7F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF4E9626C6941D00C78C7F /* ErrorView.swift */; };
+		F8B7C040279990C7003A3C73 /* universal_yolov5m_640_float32.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F8B7C03F279990C7003A3C73 /* universal_yolov5m_640_float32.mlmodel */; };
+		F8B7C0432799944C003A3C73 /* universal_yolov5m_640_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F8B7C0412799944B003A3C73 /* universal_yolov5m_640_int8.mlmodel */; };
+		F8B7C0442799944C003A3C73 /* universal_yolov5m_640_float16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F8B7C0422799944C003A3C73 /* universal_yolov5m_640_float16.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +186,9 @@
 		7CFF4E9026C66DBC00C78C7F /* CameraOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOutput.swift; sourceTree = "<group>"; };
 		7CFF4E9226C688DB00C78C7F /* CameraControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControllerProtocol.swift; sourceTree = "<group>"; };
 		7CFF4E9626C6941D00C78C7F /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		F8B7C03F279990C7003A3C73 /* universal_yolov5m_640_float32.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = universal_yolov5m_640_float32.mlmodel; sourceTree = "<group>"; };
+		F8B7C0412799944B003A3C73 /* universal_yolov5m_640_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = universal_yolov5m_640_int8.mlmodel; sourceTree = "<group>"; };
+		F8B7C0422799944C003A3C73 /* universal_yolov5m_640_float16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = universal_yolov5m_640_float16.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +357,9 @@
 				7CB02D8F27954646007EDF11 /* wagen_yolov5n_640_float16.mlmodel */,
 				7CB02D8E27954646007EDF11 /* wagen_yolov5n_640_float32.mlmodel */,
 				7CB02D9127954649007EDF11 /* wagen_yolov5n_640_int8.mlmodel */,
+				F8B7C03F279990C7003A3C73 /* universal_yolov5m_640_float32.mlmodel */,
+				F8B7C0422799944C003A3C73 /* universal_yolov5m_640_float16.mlmodel */,
+				F8B7C0412799944B003A3C73 /* universal_yolov5m_640_int8.mlmodel */,
 				7C72FA7F26859BEC00DBB03D /* Preview Content */,
 			);
 			path = SBBMLDemo;
@@ -681,15 +690,18 @@
 				7CB02D8B2795463A007EDF11 /* bahnhof_yolov5s6_640_int8.mlmodel in Sources */,
 				7CB02D9227954649007EDF11 /* wagen_yolov5m_640_float32.mlmodel in Sources */,
 				7CB02D9327954649007EDF11 /* wagen_yolov5m_640_int8.mlmodel in Sources */,
+				F8B7C0432799944C003A3C73 /* universal_yolov5m_640_int8.mlmodel in Sources */,
 				7C0C243F27303221003FA32C /* MLComputeUnitsExtension.swift in Sources */,
 				7C0C2445273036D1003FA32C /* AVLayerVideoGravityExtension.swift in Sources */,
 				7CFF4E8F26C6539200C78C7F /* BoundingBoxesView.swift in Sources */,
 				7C9DA906273D21C300CC89FF /* OnboardingViewModel.swift in Sources */,
+				F8B7C0442799944C003A3C73 /* universal_yolov5m_640_float16.mlmodel in Sources */,
 				7C0C244327303665003FA32C /* CameraPreviewSettingsView.swift in Sources */,
 				7C0C24412730334A003FA32C /* MLModelSettingsView.swift in Sources */,
 				7CB02D9727954649007EDF11 /* wagen_yolov5n_640_int8.mlmodel in Sources */,
 				7CB02D9627954649007EDF11 /* wagen_yolov5m_640_float16.mlmodel in Sources */,
 				7CB02D862795463A007EDF11 /* bahnhof_yolov5s6_640_float16.mlmodel in Sources */,
+				F8B7C040279990C7003A3C73 /* universal_yolov5m_640_float32.mlmodel in Sources */,
 				7CB02D9527954649007EDF11 /* wagen_yolov5n_640_float16.mlmodel in Sources */,
 				7CB02D8A2795463A007EDF11 /* bahnhof_yolov5s6_640_float32.mlmodel in Sources */,
 				7CB02D882795463A007EDF11 /* bahnhof_yolov5m6_640_int8.mlmodel in Sources */,

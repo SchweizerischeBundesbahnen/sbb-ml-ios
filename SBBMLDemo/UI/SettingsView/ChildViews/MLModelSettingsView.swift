@@ -23,7 +23,10 @@ struct MLModelSettingsView: View {
                 SBBRadioButton(text: Text(BuiltinMLModel.wagenM640Float32.description))
                 SBBRadioButton(text: Text(BuiltinMLModel.wagenN640Int8.description))
                 SBBRadioButton(text: Text(BuiltinMLModel.wagenN640Float16.description))
-                SBBRadioButton(text: Text(BuiltinMLModel.wagenN640Float32.description), showBottomLine: false)
+                SBBRadioButton(text: Text(BuiltinMLModel.wagenN640Float32.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.universalM640Int8.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.universalM640Float16.description))
+                SBBRadioButton(text: Text(BuiltinMLModel.universalM640Float32.description), showBottomLine: false)
             }
         }
             .navigationBarHidden(true)
