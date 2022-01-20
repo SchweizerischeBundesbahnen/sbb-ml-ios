@@ -19,7 +19,10 @@ enum BuiltinMLModel: String, CaseIterable {
     case wagenN640Float16 = "wagen_yolov5n_640_float16"
     case wagenN640Float32 = "wagen_yolov5n_640_float32"
     
-    
+    case universalM640Int8 = "universal_yolov5m_640_int8"
+    case universalM640Float16 = "universal_yolov5m_640_float16"
+    case universalM640Float32 = "universal_yolov5m_640_float32"
+
     var description: String {
         switch self {
         case .bahnhofM640Int8:
@@ -46,6 +49,12 @@ enum BuiltinMLModel: String, CaseIterable {
             return "Wagen n 640 float16"
         case .wagenN640Float32:
             return "Wagen n 640 float32"
+        case .universalM640Int8:
+            return "Universal m 640 int8"
+        case .universalM640Float16:
+            return "Universal m 640 float16"
+        case .universalM640Float32:
+            return "Universal m 640 float32"
         }
     }
 }
