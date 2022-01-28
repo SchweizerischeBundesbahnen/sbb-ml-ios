@@ -1,4 +1,4 @@
-# ESTA library: Machine Learning for iOS
+# Machine Learning for iOS
 
 [![Generic badge](https://img.shields.io/badge/platform-iOS%2014+-blue.svg)](https://www.apple.com/ios/ios-15/)
 [![Generic badge](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
@@ -34,13 +34,6 @@ The main documentation (DocC) on how to use SBB ML can be created directly from 
 
 * DocC documentation can be created in XCode by selecting "Product" -> "Build Documentation".
 * Sample app SBB ML Demo is included in Xcode project.
-
-### SBB internal documentation
-
-A the moment, the following documents are only available to persons internal to SBB:
-*  [AppBakery libraries](https://sbb.sharepoint.com/sites/app-bakery/SitePages/Mobile-Libraries.aspx "AppBakery liraries")
-*  [SBB ML Bitbucket](https://code.sbb.ch/scm/kd_esta_mobile/esta-mobile-ios-ml/ "SBB ML Bitbucket") contains the following documentation: DocC documentation can be created in XCode by selecting "Product" -> "Build Documentation".
-* Sample app SBB ML Demo is included in Xcode project
 
 ## Getting help
 
