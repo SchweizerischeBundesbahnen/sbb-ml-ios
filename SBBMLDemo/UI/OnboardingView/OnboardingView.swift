@@ -16,7 +16,7 @@ struct OnboardingView: View {
         SBBOnboardingView(state: $viewModel.onboardingState, currentCardIndex: $viewModel.currentOnboardingCardIndex, startView: startView, endView: endView) {
             SBBOnboardingCardView(image: Image("Onboarding_Card1"), title: Text("ML Framework"), text: Text("With the SBB ML library, SBB Apps can automatically detect over 100 SBB-specific objects.")) {
                 Button(action: {
-                    guard let url = URL(string: "https://confluence.sbb.ch/display/RCAPP/Modelle"),
+                    guard let url = URL(string: "https://github.com/SchweizerischeBundesbahnen/sbb-ml-models"),
                         UIApplication.shared.canOpenURL(url) else {
                         return
                     }
@@ -26,7 +26,7 @@ struct OnboardingView: View {
                 }
                     .buttonStyle(SBBSecondaryButtonStyle())
             }
-            SBBOnboardingCardView(image: Image("Onboarding_Card2"), title: Text("iOS and Android Libraries"), text: Text("Libraries for iOS and Android allow developers to easily integrate automatically trained ML models.")) {
+            SBBOnboardingCardView(image: Image("Onboarding_Card2"), title: Text("iOS and Android Libraries"), text: Text("Libraries for iOS and Android allow developers to easily integrate trained ML models.")) {
                 Button(action: {
                     guard let url = URL(string: "https://github.com/SchweizerischeBundesbahnen/mobile-ios-ml"),
                         UIApplication.shared.canOpenURL(url) else {
