@@ -5,6 +5,7 @@
 import Foundation
 import UIKit
 import AVFoundation
+import CoreML
 
 /// An Object containing information about a detected object while running the ObjectDetection algorithm from camera input.
 public struct DetectedObject: Equatable, Identifiable {
@@ -27,6 +28,13 @@ public struct DetectedObject: Equatable, Identifiable {
     /// The bounding box relative to the PreviewLayer of ``CameraStreamView``.
     public var rectInPreviewLayer: CGRect
     
+    /// The masks
+    public var masks: MLMultiArray?
+    
+    /// The mask index
+    public var maskIndex: NSNumber?
+    
+        
     /**
      Returns a ``DetectedObject`` which you can use to create fake objects e.g. for SwiftuI Previews, Testing etc.
      
@@ -37,11 +45,13 @@ public struct DetectedObject: Equatable, Identifiable {
         - rect: The normalized bounding box of the detected object. (0,0) is the bottom left corner.
         - rectInPreviewLayer: The bounding box relative to the PreviewLayer of ``CameraStreamView``.
      */
-    public init(label: String, confidence: Float, depth: Float?, rect: CGRect, rectInPreviewLayer: CGRect) {
+    public init(label: String, confidence: Float, depth: Float?, rect: CGRect, rectInPreviewLayer: CGRect, masks: MLMultiArray? = nil, maskIndex: NSNumber? = nil) {
         self.label = label
         self.confidence = confidence
         self.depth = depth
         self.rect = rect
         self.rectInPreviewLayer = rectInPreviewLayer
+        self.masks = masks
+        self.maskIndex = maskIndex
     }
 }

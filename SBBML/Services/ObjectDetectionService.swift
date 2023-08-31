@@ -60,7 +60,7 @@ public class ObjectDetectionService: ObjectDetectionServiceProtocol {
         self.modelFileName = modelFileName
         self.configuration = configuration
         self.cameraController = CameraController(previewVideoGravity: configuration.previewVideoGravity, depthRecordingEnabled: configuration.distanceRecordingEnabled)
-        self.objectDetection = ObjectDetection(modelProvider: ModelProvider(modelFileName: modelFileName, computeUnits: configuration.computeUnits), thresholdProvider: ThresholdProvider(confidenceThreshold: Double(configuration.confidenceThreshold), iouThreshold: configuration.iouThreshold), inferencePerformanceAnalysis: InferencePerformanceAnalysis(), depthRecognition: DepthRecognition())
+        self.objectDetection = ObjectDetection(modelProvider: ModelProvider(modelFileName: modelFileName, computeUnits: configuration.computeUnits), thresholdProvider: ThresholdProvider(confidenceThreshold: Double(configuration.confidenceThreshold), iouThreshold: configuration.iouThreshold, new: modelFileName.contains("segmentation")), inferencePerformanceAnalysis: InferencePerformanceAnalysis(), depthRecognition: DepthRecognition())
         self.objectTracking = ObjectTracking(confidenceThreshold: configuration.objectTrackingConfidenceThreshold)
         
         setupSubsriptions(for: configuration)

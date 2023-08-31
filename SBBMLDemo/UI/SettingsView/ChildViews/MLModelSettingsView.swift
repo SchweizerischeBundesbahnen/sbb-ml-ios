@@ -12,6 +12,7 @@ struct MLModelSettingsView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             SBBRadioButtonGroup(title: "ML Model", selection: $detectedObjectsViewModel.model, tags: Array(BuiltinMLModel.allCases)) {
+                SBBRadioButton(text: Text(BuiltinMLModel.segmentation.description))
                 SBBRadioButton(text: Text(BuiltinMLModel.bahnhofM640Int8.description))
                 SBBRadioButton(text: Text(BuiltinMLModel.bahnhofM640Float16.description))
                 SBBRadioButton(text: Text(BuiltinMLModel.bahnhofM640Float32.description))

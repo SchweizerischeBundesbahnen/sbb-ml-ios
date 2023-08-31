@@ -20,7 +20,7 @@ extension CGRect {
         return flippedFrame
     }
     
-    private func flip(around axis: FlipAxis) -> CGRect {
+    func flip(around axis: FlipAxis) -> CGRect {
         switch axis {
         case .none:
             return self

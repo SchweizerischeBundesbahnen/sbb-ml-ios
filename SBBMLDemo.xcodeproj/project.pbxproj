@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000307D22A98DA6400E315FD /* yolov8n-seg_640_float32.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 000307D12A98DA6400E315FD /* yolov8n-seg_640_float32.mlmodel */; };
 		00DB5AC02811948100543C9C /* SBBDesignSystemMobileSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB5ABF2811948100543C9C /* SBBDesignSystemMobileSwiftUI */; };
 		7C0C243C27302CFA003FA32C /* ComputeUnitsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243B27302CFA003FA32C /* ComputeUnitsSettingsView.swift */; };
 		7C0C243F27303221003FA32C /* MLComputeUnitsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */; };
@@ -110,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000307D12A98DA6400E315FD /* yolov8n-seg_640_float32.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "yolov8n-seg_640_float32.mlmodel"; sourceTree = "<group>"; };
 		7C0C243B27302CFA003FA32C /* ComputeUnitsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeUnitsSettingsView.swift; sourceTree = "<group>"; };
 		7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLComputeUnitsExtension.swift; sourceTree = "<group>"; };
 		7C0C24402730334A003FA32C /* MLModelSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModelSettingsView.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 		7C72FA7826859BEA00DBB03D /* SBBMLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				000307D12A98DA6400E315FD /* yolov8n-seg_640_float32.mlmodel */,
 				7C72FA7926859BEA00DBB03D /* SBBMLDemoApp.swift */,
 				7C807A4226BD58A500C0B6D5 /* UI */,
 				7C807A4326BD58A500C0B6D5 /* ViewModels */,
@@ -708,6 +711,7 @@
 				7CB02D872795463A007EDF11 /* bahnhof_yolov5m6_640_float16.mlmodel in Sources */,
 				7CFF4E9726C6941D00C78C7F /* ErrorView.swift in Sources */,
 				7C807A4126BD572400C0B6D5 /* DetectedObjectsViewModel.swift in Sources */,
+				000307D22A98DA6400E315FD /* yolov8n-seg_640_float32.mlmodel in Sources */,
 				7CC170E326E76EA90083F999 /* BuiltinMLModel.swift in Sources */,
 				7C72FA7A26859BEA00DBB03D /* SBBMLDemoApp.swift in Sources */,
 			);
