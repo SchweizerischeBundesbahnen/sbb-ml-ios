@@ -5,7 +5,7 @@
 * Update DSM dependency (now using https and tagged version)
 
 ## V1.0.1 - 08 May 2023
-### Features
+### Improvements
 * Onboarding is updated
 
 ## V1.0.0 - 05 Jan 2022
