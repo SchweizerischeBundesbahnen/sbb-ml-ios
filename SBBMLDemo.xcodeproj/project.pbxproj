@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00DB5AC02811948100543C9C /* SBBDesignSystemMobileSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 00DB5ABF2811948100543C9C /* SBBDesignSystemMobileSwiftUI */; };
+		007253DE2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 007253DD2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI */; };
 		7C0C243C27302CFA003FA32C /* ComputeUnitsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243B27302CFA003FA32C /* ComputeUnitsSettingsView.swift */; };
 		7C0C243F27303221003FA32C /* MLComputeUnitsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */; };
 		7C0C24412730334A003FA32C /* MLModelSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C24402730334A003FA32C /* MLModelSettingsView.swift */; };
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C1640962685C67E00C4EEF3 /* SBBML.framework in Frameworks */,
-				00DB5AC02811948100543C9C /* SBBDesignSystemMobileSwiftUI in Frameworks */,
+				007253DE2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			);
 			name = SBBMLDemo;
 			packageProductDependencies = (
-				00DB5ABF2811948100543C9C /* SBBDesignSystemMobileSwiftUI */,
+				007253DD2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI */,
 			);
 			productName = SBBMLDemo;
 			productReference = 7C72FA7626859BEA00DBB03D /* SBBMLDemo.app */;
@@ -602,7 +602,7 @@
 			);
 			mainGroup = 7C72FA6D26859BEA00DBB03D;
 			packageReferences = (
-				00DB5ABE2811948100543C9C /* XCRemoteSwiftPackageReference "mobile-ios-design-swiftui" */,
+				007253DC2AC6A90C000B2558 /* XCRemoteSwiftPackageReference "mobile-ios-design-swiftui" */,
 			);
 			productRefGroup = 7C72FA7726859BEA00DBB03D /* Products */;
 			projectDirPath = "";
@@ -1059,20 +1059,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		00DB5ABE2811948100543C9C /* XCRemoteSwiftPackageReference "mobile-ios-design-swiftui" */ = {
+		007253DC2AC6A90C000B2558 /* XCRemoteSwiftPackageReference "mobile-ios-design-swiftui" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SchweizerischeBundesbahnen/mobile-ios-design-swiftui";
+			repositoryURL = "https://github.com/SchweizerischeBundesbahnen/mobile-ios-design-swiftui.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		00DB5ABF2811948100543C9C /* SBBDesignSystemMobileSwiftUI */ = {
+		007253DD2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 00DB5ABE2811948100543C9C /* XCRemoteSwiftPackageReference "mobile-ios-design-swiftui" */;
+			package = 007253DC2AC6A90C000B2558 /* XCRemoteSwiftPackageReference "mobile-ios-design-swiftui" */;
 			productName = SBBDesignSystemMobileSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */

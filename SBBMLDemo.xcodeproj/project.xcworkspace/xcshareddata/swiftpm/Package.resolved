@@ -3,10 +3,10 @@
     {
       "identity" : "mobile-ios-design-swiftui",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SchweizerischeBundesbahnen/mobile-ios-design-swiftui",
+      "location" : "https://github.com/SchweizerischeBundesbahnen/mobile-ios-design-swiftui.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "26a0ecabcee7728f2a75fa9448f22ea70922e569"
+        "revision" : "457789fd7817d328f82d8025b8d1acd71a58cca6",
+        "version" : "1.0.5"
       }
     }
   ],
