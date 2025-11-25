@@ -4,7 +4,7 @@
 [![Generic badge](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![GPLv3 license](https://img.shields.io/badge/License-MIT-blue.svg)](https://spdx.org/licenses/MIT.html)
 
-This framework simplifies the integration of SBB generated Core ML Object Detection models into iOS Apps using Combine. It displays a CameraStream Preview in your SwiftUI View and publishes detected objects, which you can then draw over the CameraStream preview or use for further app logic.
+This framework simplifies the integration of SBB generated Core ML Object Detection models into iOS Apps using Combine or Swift Concurrency. It displays a CameraStream Preview in your SwiftUI View and publishes detected objects, which you can then draw over the CameraStream preview or use for further app logic.
 
 ![SBB ML in use](SBBML/Documentation.docc/Resources/SBBML_iPhone13Pro.png)
 
@@ -81,7 +81,6 @@ class ExampleViewModel: ObservableObject {
 			.sink(receiveValue: { [weak self] inferenceTime in
 				self?.currentObjectDetectionInferenceTime = inferenceTime
         }
-
 }
 ```
 The SBBML Lib is composed of the following components (which are typically used in a view model, to deal with the logic):
@@ -92,6 +91,10 @@ The SBBML Lib is composed of the following components (which are typically used 
 	- **detectedObjectsPublisher**: publishes a list of DetectedObject
 	- **errorPublisher**: publishes the errors that may occur in the framework
 	- **currentObjectDetectionInferenceTimePublisher**: publishes the last inference time
+- It also has three async streams, if one prefers to avoid Combine:
+    - **detectedObjectsStream**: publishes the detected objects
+    - **errorStream**: publishes the errors that may occur in the framework
+    - **currentObjectDetectionInferenceTimeStream**: publishes the inference times
 
 Here is how we would display the camera stream, as well as some more information about the detected objects (e.g. bounding box, inference time).
 

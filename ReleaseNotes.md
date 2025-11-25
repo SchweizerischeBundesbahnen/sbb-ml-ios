@@ -1,5 +1,9 @@
 # Release Notes SBBML for iOS
 
+## V1.1.0 - 25 Nov 2025
+### Features
+* AsyncStreams can be used instead of Publishers to publish the updated detection, error and inference time.
+
 ## V1.0.2 - 29 Sept 2023
 ### Bugfix
 * Update DSM dependency (now using https and tagged version)

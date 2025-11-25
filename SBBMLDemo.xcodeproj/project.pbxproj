@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		007253DE2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 007253DD2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI */; };
+		00EFBDDA2ED59BE700BD1AEC /* FakeObjectDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFBDD92ED59BE100BD1AEC /* FakeObjectDetectionService.swift */; };
 		7C0C243C27302CFA003FA32C /* ComputeUnitsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243B27302CFA003FA32C /* ComputeUnitsSettingsView.swift */; };
 		7C0C243F27303221003FA32C /* MLComputeUnitsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */; };
 		7C0C24412730334A003FA32C /* MLModelSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C24402730334A003FA32C /* MLModelSettingsView.swift */; };
@@ -110,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00EFBDD92ED59BE100BD1AEC /* FakeObjectDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeObjectDetectionService.swift; sourceTree = "<group>"; };
 		7C0C243B27302CFA003FA32C /* ComputeUnitsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeUnitsSettingsView.swift; sourceTree = "<group>"; };
 		7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLComputeUnitsExtension.swift; sourceTree = "<group>"; };
 		7C0C24402730334A003FA32C /* MLModelSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModelSettingsView.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 		7C807A3526BD536400C0B6D5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				00EFBDD92ED59BE100BD1AEC /* FakeObjectDetectionService.swift */,
 				7C807A3626BD536F00C0B6D5 /* ObjectDetectionService.swift */,
 				7C19CE25274665000079678A /* ObjectDetectionServiceProtocol.swift */,
 				7C93C9EA26CE867F00299D50 /* ObjectDetectionServiceConfiguration.swift */,
@@ -653,6 +656,7 @@
 				7C807A3326BD51C700C0B6D5 /* CameraStreamView.swift in Sources */,
 				7C9DA90B273D416E00CC89FF /* Documentation.docc in Sources */,
 				7CFF4E8926C5029300C78C7F /* ThresholdProvider.swift in Sources */,
+				00EFBDDA2ED59BE700BD1AEC /* FakeObjectDetectionService.swift in Sources */,
 				7C3FC71826C4E8B800928922 /* ObjectDetection.swift in Sources */,
 				7C3FC71A26C4E8C700928922 /* ObjectTracking.swift in Sources */,
 				7C3FC72026C4EC2800928922 /* ObjectTrackingProtocol.swift in Sources */,
@@ -942,7 +946,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.SBBMLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -968,7 +972,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.SBBMLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

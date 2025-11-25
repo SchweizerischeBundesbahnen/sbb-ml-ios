@@ -17,6 +17,19 @@ public class ObjectDetectionService: ObjectDetectionServiceProtocol {
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
+    public var detectedObjectsStream: AsyncStream<[DetectedObject]> {
+        AsyncStream { continuation in
+            let cancellable = detectedObjectsSubject
+                .removeDuplicates()
+                .sink(receiveValue: { value in
+                    continuation.yield(value)
+                })
+            
+            continuation.onTermination = { _ in
+                cancellable.cancel()
+            }
+        }
+    }
     private let detectedObjectsSubject = CurrentValueSubject<[DetectedObject], Never>([DetectedObject]())
     private var detectedObjectsSubscription: Cancellable!
     
@@ -27,6 +40,19 @@ public class ObjectDetectionService: ObjectDetectionServiceProtocol {
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
+    public var errorStream: AsyncStream<ObjectDetectionError?> {
+        AsyncStream { continuation in
+            let cancellable = errorSubject
+                .removeDuplicates()
+                .sink(receiveValue: { value in
+                    continuation.yield(value)
+                })
+            
+            continuation.onTermination = { _ in
+                cancellable.cancel()
+            }
+        }
+    }
     private let errorSubject = CurrentValueSubject<ObjectDetectionError?, Never>(nil)
     private var errorSubscription: Cancellable!
     
@@ -36,6 +62,19 @@ public class ObjectDetectionService: ObjectDetectionServiceProtocol {
             .removeDuplicates()
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
+    }
+    public var currentObjectDetectionInferenceTimeStream: AsyncStream<TimeInterval> {
+        AsyncStream { continuation in
+            let cancellable = currentObjectDetectionInferenceTimeSubject
+                .removeDuplicates()
+                .sink(receiveValue: { value in
+                    continuation.yield(value)
+                })
+            
+            continuation.onTermination = { _ in
+                cancellable.cancel()
+            }
+        }
     }
     private let currentObjectDetectionInferenceTimeSubject = CurrentValueSubject<TimeInterval, Never>(0)
     private var currentObjectDetectionInferenceTimeSubscription: Cancellable!
