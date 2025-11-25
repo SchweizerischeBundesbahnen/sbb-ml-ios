@@ -9,7 +9,7 @@ public class FakeObjectDetectionService: ObjectDetectionServiceProtocol {
     
     public init() {}
 
-    let detectedObjectsSubject = PassthroughSubject<[DetectedObject], Never>()
+    public let detectedObjectsSubject = PassthroughSubject<[DetectedObject], Never>()
     public var detectedObjectsPublisher: AnyPublisher<[DetectedObject], Never> {
         detectedObjectsSubject.eraseToAnyPublisher()
     }
@@ -26,7 +26,7 @@ public class FakeObjectDetectionService: ObjectDetectionServiceProtocol {
         }
     }
 
-    let errorSubject = PassthroughSubject<ObjectDetectionError?, Never>()
+    public let errorSubject = PassthroughSubject<ObjectDetectionError?, Never>()
     public var errorPublisher: AnyPublisher<ObjectDetectionError?, Never> {
         errorSubject.eraseToAnyPublisher()
     }
@@ -44,7 +44,7 @@ public class FakeObjectDetectionService: ObjectDetectionServiceProtocol {
         }
     }
 
-    let currentObjectDetectionInferenceTimeSubject = PassthroughSubject<TimeInterval, Never>()
+    public let currentObjectDetectionInferenceTimeSubject = PassthroughSubject<TimeInterval, Never>()
     public var currentObjectDetectionInferenceTimePublisher: AnyPublisher<TimeInterval, Never> {
         currentObjectDetectionInferenceTimeSubject.eraseToAnyPublisher()
     }
