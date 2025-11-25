@@ -6,6 +6,8 @@ import Foundation
 import Combine
 
 public class FakeObjectDetectionService: ObjectDetectionServiceProtocol {
+    
+    public init() {}
 
     let detectedObjectsSubject = PassthroughSubject<[DetectedObject], Never>()
     public var detectedObjectsPublisher: AnyPublisher<[DetectedObject], Never> {
