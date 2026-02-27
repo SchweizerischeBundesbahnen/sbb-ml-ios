@@ -13,6 +13,8 @@ extension MLComputeUnits {
             return "CPU and GPU"
         case .all:
             return "all"
+        case .cpuAndNeuralEngine:
+            return "CPU and NE"
         @unknown default:
             return "unknown"
         }

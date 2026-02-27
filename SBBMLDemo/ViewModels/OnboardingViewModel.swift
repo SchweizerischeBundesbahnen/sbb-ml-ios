@@ -11,7 +11,9 @@ class OnboardingViewModel: ObservableObject {
     @Published var onboardingState: SBBOnboardingState {
         willSet {
             userDefaults.set(newValue.rawValue, forKey: OnboardingViewModel.userDefaultsKey)
-            UIAccessibility.post(notification: .screenChanged, argument: nil)   // reset voiceover focus (on Onboarding or on "normal" screen)
+            Task {
+                await UIAccessibility.post(notification: .screenChanged, argument: nil)   // reset voiceover focus (on Onboarding or on "normal" screen)
+            }
         }
     }
     @Published var currentOnboardingCardIndex: Int = 0

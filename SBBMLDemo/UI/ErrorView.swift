@@ -12,7 +12,7 @@ struct ErrorView: View {
     var body: some View {
         VStack(spacing: 8) {
             Spacer()
-            Image(sbbName: "camera", size: .medium)
+            Image(sbbIcon: .camera_medium)
             Text("An error occured")
                 .sbbFont(.copy)
             Text(error.localizedDescription)
