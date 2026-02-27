@@ -5,7 +5,7 @@
 import Foundation
 
 /// The type of Error that occured while trying to run SBB ML.
-public enum ObjectDetectionError: Swift.Error {
+public enum ObjectDetectionError: Swift.Error, Sendable {
     
     /// The camera input could not be added to the CaptureSession. This typically happens when you select a sessionPreset or cameraInput that is not supported by the current device.
     case inputsAreInvalid

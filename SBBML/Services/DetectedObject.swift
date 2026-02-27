@@ -7,7 +7,7 @@ import UIKit
 import AVFoundation
 
 /// An Object containing information about a detected object while running the ObjectDetection algorithm from camera input.
-public struct DetectedObject: Equatable, Identifiable {
+public struct DetectedObject: Equatable, Identifiable, Sendable {
     
     /// UUID strings, to uniquely identify this DetectedObject.
     public let id = UUID()

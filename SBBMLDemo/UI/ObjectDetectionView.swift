@@ -27,16 +27,16 @@ struct ObjectDetectionView: View {
                         .edgesIgnoringSafeArea([.bottom, .horizontal])
                     VStack(alignment: .trailing) {
                         if let detectedObjects = detectedObjectsViewModel.detectedObjects, detectedObjects.isEmpty {
-                            SBBInfoView(image: Image(sbbName: "camera", size: .medium), text: Text("Please point your camera to SBB objects."))
+                            SBBInfoView(image: Image(sbbIcon: .camera_medium), text: Text("Please point your camera to SBB objects."))
                         } else {
-                            SBBInfoView(image: Image(sbbName: "chart-column-trend", size: .medium), text: Text("Inference Time: \n\(String(format: "%.3f", detectedObjectsViewModel.currentObjectDetectionInferenceTime))s"))
+                            SBBInfoView(image: Image(sbbIcon: .chart_column_trend_medium), text: Text("Inference Time: \n\(String(format: "%.3f", detectedObjectsViewModel.currentObjectDetectionInferenceTime))s"))
                         }
                         Spacer()
                         Button(action: {
                             showingModalView = true
                         }) {
                             HStack {
-                                Image(sbbName: "controls", size: .small)
+                                Image(sbbIcon: .controls_small)
                                 Text("Settings")
                             }
                         }

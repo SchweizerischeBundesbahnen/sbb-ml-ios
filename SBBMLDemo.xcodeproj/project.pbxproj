@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		007253DE2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 007253DD2AC6A90C000B2558 /* SBBDesignSystemMobileSwiftUI */; };
+		00B6E4C82F518EEE00D495B1 /* CoreML+Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6E4C72F518EEA00D495B1 /* CoreML+Sendable.swift */; };
+		00B6E4CA2F518F4600D495B1 /* CoreMLModels+Sendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6E4C92F518F4000D495B1 /* CoreMLModels+Sendable.swift */; };
 		00EFBDDA2ED59BE700BD1AEC /* FakeObjectDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFBDD92ED59BE100BD1AEC /* FakeObjectDetectionService.swift */; };
 		7C0C243C27302CFA003FA32C /* ComputeUnitsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243B27302CFA003FA32C /* ComputeUnitsSettingsView.swift */; };
 		7C0C243F27303221003FA32C /* MLComputeUnitsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */; };
@@ -111,6 +113,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00B6E4C72F518EEA00D495B1 /* CoreML+Sendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreML+Sendable.swift"; sourceTree = "<group>"; };
+		00B6E4C92F518F4000D495B1 /* CoreMLModels+Sendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreMLModels+Sendable.swift"; sourceTree = "<group>"; };
 		00EFBDD92ED59BE100BD1AEC /* FakeObjectDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeObjectDetectionService.swift; sourceTree = "<group>"; };
 		7C0C243B27302CFA003FA32C /* ComputeUnitsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeUnitsSettingsView.swift; sourceTree = "<group>"; };
 		7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLComputeUnitsExtension.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 		7C0C243D27303214003FA32C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				00B6E4C92F518F4000D495B1 /* CoreMLModels+Sendable.swift */,
 				7C0C243E27303221003FA32C /* MLComputeUnitsExtension.swift */,
 				7C0C2444273036D1003FA32C /* AVLayerVideoGravityExtension.swift */,
 			);
@@ -473,6 +478,7 @@
 		7C93C9E326CE2C5900299D50 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				00B6E4C72F518EEA00D495B1 /* CoreML+Sendable.swift */,
 				7C93C9E426CE2C6700299D50 /* CGRect.swift */,
 				7C93C9E626CE454E00299D50 /* UIDeviceOrientation.swift */,
 				7C93C9E826CE826700299D50 /* CGImagePropertyOrientation.swift */,
@@ -653,6 +659,7 @@
 				7C19CE26274665000079678A /* ObjectDetectionServiceProtocol.swift in Sources */,
 				7C3FC71626C4E8A100928922 /* DepthRecognition.swift in Sources */,
 				7C3FC71C26C4EC0D00928922 /* DepthRecognitionProtocol.swift in Sources */,
+				00B6E4C82F518EEE00D495B1 /* CoreML+Sendable.swift in Sources */,
 				7C807A3326BD51C700C0B6D5 /* CameraStreamView.swift in Sources */,
 				7C9DA90B273D416E00CC89FF /* Documentation.docc in Sources */,
 				7CFF4E8926C5029300C78C7F /* ThresholdProvider.swift in Sources */,
@@ -710,6 +717,7 @@
 				7CB02D8A2795463A007EDF11 /* bahnhof_yolov5s6_640_float32.mlmodel in Sources */,
 				7CB02D882795463A007EDF11 /* bahnhof_yolov5m6_640_int8.mlmodel in Sources */,
 				7CB02D872795463A007EDF11 /* bahnhof_yolov5m6_640_float16.mlmodel in Sources */,
+				00B6E4CA2F518F4600D495B1 /* CoreMLModels+Sendable.swift in Sources */,
 				7CFF4E9726C6941D00C78C7F /* ErrorView.swift in Sources */,
 				7C807A4126BD572400C0B6D5 /* DetectedObjectsViewModel.swift in Sources */,
 				7CC170E326E76EA90083F999 /* BuiltinMLModel.swift in Sources */,
@@ -946,10 +954,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.SBBMLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -972,10 +982,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ch.sbb.SBBMLDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1068,7 +1080,7 @@
 			repositoryURL = "https://github.com/SchweizerischeBundesbahnen/mobile-ios-design-swiftui.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.2.8;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

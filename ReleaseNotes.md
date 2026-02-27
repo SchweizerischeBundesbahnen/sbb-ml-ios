@@ -1,5 +1,9 @@
 # Release Notes SBBML for iOS
 
+## V1.1.1 - 27 February 2026
+### Features
+* Swift Strict Concurrency
+
 ## V1.1.0 - 25 Nov 2025
 ### Features
 * AsyncStreams can be used instead of Publishers to publish the updated detection, error and inference time.
